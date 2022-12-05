@@ -1,0 +1,55 @@
+<div class="calendario my-4 py-4 bg-3">
+    <div class="container pt-4">
+       <div class="row">
+
+          <div class="col-xl-2 col-lg-3 vertical-align-center">
+            <div class="row ">
+               <div class="col-12">
+                  <h2 class="titulo-2 text-white">Próximos eventos</h2>
+                  <p class="text-white">Entérate y participa de los eventos que transforman.</p>
+               </div>
+            </div>
+          </div>
+
+          <div class="col-xl-10 col-lg-9  tarjetas">
+             <div id="forcecentered" style="overflow: hidden;">
+
+                <div class="event-list bd-highlight" style="transform: translateZ(0px); width: 960px;">
+
+                   <div class="event-dash-card bg-white" *ngFor="let eventos of  eventosCalendario; index as i">
+                      <div class="card-body">
+                         <h1 class="card-title">
+                            <span class="event-dash-card-icon"><i class="bi bi-calendar3"></i> </span>
+                            <span class="day">{{eventos.dia}}</span>
+                            <small>{{eventos.mes}} <br>{{eventos.hora}}</small>
+                         </h1>
+                         <p class="card-text">{{eventos.evento}} </p>
+                         <div class="card-footer">
+                            <ul class="guest-list">
+                               <li>
+                                  <a href="#"><img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Guests"></a>
+                               </li>
+                               <li><a href="#"><span>+99</span></a></li>
+                            </ul>
+                         </div>
+                      </div>
+                   </div>
+
+
+
+                </div>
+                <a class="btn nextbtn" href="#"> &gt; </a>
+             </div>
+          </div>
+
+          <div class="col-xl-12 text-right pt-4">
+            <a href="" class="btn text-white"> 
+                Ver todos los eventos 
+                <img src="{{next}}" alt="boton siguiente">
+            </a>
+        </div>
+
+
+       </div>
+    </div>
+ </div>

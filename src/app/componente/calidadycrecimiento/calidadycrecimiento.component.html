@@ -1,0 +1,18 @@
+<section class="pt-4 mt-4">
+    <div class="row justify-content-center">
+        <div class="col-xl-12 mb-4 pb-4">
+            <h2 class="titulo-2 text-center">Calidad y Crecimiento </h2>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-10 col-10">
+            <div class="custom-slider">
+                <div class="custom-box" *ngFor="let imagenescalidad of imagenesCalidad; index as i">
+                    <img src="{{imagenescalidad.imagen}}" alt="">
+                    <div class="nombre-calidad"><span>{{imagenescalidad.titulo}}</span></div>
+                </div>
+
+            </div>
+         
+        </div>
+    </div>
+</section>
+

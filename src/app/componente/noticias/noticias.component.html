@@ -1,0 +1,70 @@
+
+
+<section id="noticias" >
+
+    <div class="row p-0 m-0">
+        <div class="col-xl-12 text-center">
+           <h2 class="titulo-2 text-center pb-4">Noticias que inspiran</h2>
+        </div>
+    </div>
+     
+    <div class="row justify-content-center p-0 m-0">  
+        <div class="col-xl-10 col-lg-10 col-md-10 col-9 pr-0 mr-0">
+
+            <div class="row card-carousels">  
+                <div class="col-xl-4" *ngFor="let noticias of listarNoticias; index as i">
+                    <div class="cards">
+
+                        <div class="col-xl-12">
+                            <div class="column">
+                                <div class="post-module">
+                                    <div class="thumbnail">
+                                        <div class="date">
+                                            <div class="day">27</div>
+                                            <div class="month">Mar</div>
+                                        </div>
+                                        <img src="assets/image_noticias/{{noticias.img_noticias}}" alt="">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="category" [ngStyle]="{'background-color': noticias.color}" >{{noticias.nombre_categoria}}</div>
+                                        <h1 class="title">{{noticias.titulo_noticias}}</h1>
+                                        <h2 class="sub_title">{{noticias.subtitulo_noticias}}</h2>
+                                        <p class="description" style="display: none; height: 80px; opacity: 1; overflow: hidden;">{{noticias.contenido_noticias}}</p>
+                                        <div class="post-meta">
+                                            <div class="row">
+                                                <div class="col-xl-7 pt-1">
+                                                    <span class="timestamp"><img src="{{calendario}}" alt="Publicado"> Publicado {{noticias.fecha_noticias}}</span>
+                                                </div>
+                                                <div class="col-xl-2 pt-1"> 
+                                                    <span class="comments">39 <img src="{{vistas}}" alt="Publicado"> </span>
+                                                </div>
+                                                <div class="col-xl-3"> 
+                                                    <a href="" class="btn btn-light btn-sm text-black">Leer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="col-xl-10 text-right pb-4">
+            <a href="" class="btn"> 
+                Ver todas las noticias 
+                <img src="{{next}}" alt="boton siguiente">
+            </a>
+        </div>
+    </div>
+
+</section>
+
+

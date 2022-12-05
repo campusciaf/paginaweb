@@ -1,0 +1,13 @@
+
+<ngb-carousel >
+	<ng-template *ngFor="let slides of listarSlider; let iControl2=index; index as i" ngbSlide>
+		<div class="picsum-img-wrapper">
+      <img src="assets/image_slide/{{slides.nombre}} " class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-caption">
+			<h3>{{slides.titulo_slide}} </h3>
+			<p>{{slides.descripcion_slide}} </p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+
