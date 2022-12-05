@@ -1,5 +1,3 @@
-
-
 .nextbtn {
 	position: absolute;
 	top: 50%;
@@ -17,11 +15,12 @@
 	display: inline-block;
 }
 
-.event-list div {
+.event-list .evento {
 	float: left;
-	width: 220px;
 	height: 220px;
-	margin: 10px;
+	width: 200px;
+	text-align: center;
+	margin: 5px;
 }
 
 #forcecentered {
@@ -29,31 +28,12 @@
 }
 
 #forcecentered .event-list .event-dash-card.active {
-	background: -webkit-linear-gradient(45deg, #8a62ff, #0a8dff);
-	background: -o-linear-gradient(45deg, #8a62ff, #0a8dff);
-	background: -moz-linear-gradient(45deg, #8a62ff, #0a8dff);
-	background: linear-gradient(45deg, #8a62ff, #0a8dff);
+	background: linear-gradient(180deg, #3F64B0 2.93%, #3B62AF 23.62%, #305EAC 43.59%, #1C56A7 63.22%, #024CA0 82.07%);
+	background: -webkit-linear-gradient(180deg, #3F64B0 2.93%, #3B62AF 23.62%, #305EAC 43.59%, #1C56A7 63.22%, #024CA0 82.07%);
+	background: -o-linear-gradient(180deg, #3F64B0 2.93%, #3B62AF 23.62%, #305EAC 43.59%, #1C56A7 63.22%, #024CA0 82.07%);
+	background: -moz-linear-gradient(180deg, #3F64B0 2.93%, #3B62AF 23.62%, #305EAC 43.59%, #1C56A7 63.22%, #024CA0 82.07%);
+	background: -webkit-linear-gradient(180deg, #3F64B0 2.93%, #3B62AF 23.62%, #305EAC 43.59%, #1C56A7 63.22%, #024CA0 82.07%);
 	color: #fff;
-}
-
-.guest-list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.guest-list li {
-	float: left;
-	margin-right: 10px;
-}
-
-.guest-list li a img {
-	width: 32px;
-	border-radius: 100%;
-}
-
-.event-dash-card .card-footer {
-	padding: 10px 8px;
 }
 
 .guest-list li:last-child a {
@@ -76,46 +56,3 @@
 .guest-list li:last-child a:hover {
 	text-decoration: none;
 }
-
-.event-dash-card {
-	border: 1px solid #e9e9e9;
-	/* -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-	  0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-	  0 3px 1px -2px rgba(0, 0, 0, 0.2); */
-}
-
-.event-dash-card-icon {
-	font-size: 14px;
-	vertical-align: top;
-}
-
-.event-dash-card .card-title .day {
-	font-size: 50px;
-}
-
-.event-list .event-dash-card.active .card-title .day,
-.event-list .event-dash-card.active .card-title small {
-	color: #fff
-}
-
-.event-dash-card .card-title small {
-	font-size: 22px;
-	text-align: left;
-	float: right;
-	margin-right: 45px;
-	margin-top: 5px;
-	line-height: 24px;
-}
-
-.event-dash-card .card-text {
-
-	height: 50px;
-	
-}
-
-.event-dash-card .card-footer {
-	border: none;
-	background: transparent;
-}
-

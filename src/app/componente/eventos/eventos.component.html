@@ -16,16 +16,16 @@
 
                 <div class="event-list bd-highlight" style="transform: translateZ(0px); width: 960px;">
 
-                   <div class="event-dash-card bg-white" *ngFor="let eventos of  eventosCalendario; index as i">
-                      <div class="card-body">
-                         <h1 class="card-title">
-                            <span class="event-dash-card-icon"><i class="bi bi-calendar3"></i> </span>
-                            <span class="day">{{eventos.dia}}</span>
-                            <small>{{eventos.mes}} <br>{{eventos.hora}}</small>
-                         </h1>
-                         <p class="card-text">{{eventos.evento}} </p>
-                         <div class="card-footer">
-                           <a href="#" class="btn btn-success"><span>Ver evento</span></a>
+                   <div class="event-dash-card bg-white evento"  *ngFor="let eventos of  eventosCalendario; index as i">
+                      <div class="card-body text-center">
+
+                            <p class="fs-3 pt-4 bolder-1">{{eventos.dia}} {{eventos.mes}}</p>
+                            <span class="card-text">{{eventos.evento}} </span>
+                            <p class="fs-5">{{eventos.hora}}</p>
+                            
+
+                         <div>
+                           <a href="#" class="btn bg-3 text-white btn btn-sm"><span>Ver evento</span></a>
                          </div>
                       </div>
                    </div>
